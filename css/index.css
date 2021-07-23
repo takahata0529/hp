@@ -1,74 +1,91 @@
 @charset "UTF-8";
-.header_all{
+.header_all {
   width: 100%;
-  position:relative;
+  position: relative;
 }
 
-.header_inner img{
-position: absolute;
-width: 150px;
-padding: 30px;
+.header_inner img {
+  position: absolute;
+  width: 150px;
+  padding: 30px;
 }
 
-.header_inner nav ul{
+.header_inner nav ul {
   position: absolute;
   text-align: center;
   width: 40%;
   padding-top: 10%;
 }
 
-.header_inner nav ul li{
+.header_inner nav ul li {
   padding-bottom: 50px;
   font-weight: bold;
 }
 
-.header_inner nav ul li .color{
-  color:#ff8856;
+.header_inner nav ul li .color {
+  color: #ff8856;
 }
 
-.header_inner nav ul a:hover{
-opacity: 0.5;
+.header_inner nav ul a:hover {
+  color: rgb(38, 212, 105);
+  opacity: 0.7;
+  border: 1px solid #222;
+  border-radius: 3px;
+  box-shadow: -5px 5px #4e4c4c;
+  position: relative;
+  right: 5px;
 }
 
-.top_inner{
+.header_inner nav ul a:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+  right: 10px;
+}
+
+.top_inner {
   width: 60%;
   position: relative;
   float: right;
   text-align: center;
 }
 
-.top_inner img{
+.top_inner img {
   width: 100%;
   height: auto;
 }
 
-.top_title{
+.top_title {
   position: relative;
   line-height: 1;
-  top:-60px;
+  top: -60px;
 }
 
-.top_inner h1{
-font-size: 100px;
-color: #ff8856;
+.top_inner h1 {
+  font-size: 100px;
+  color: #ff8856;
+  text-shadow: 2px 2px 10px #777, -2px 2px 10px #777, 2px -2px 10px #777,
+    -2px -2px 10px #777;
 }
 
-.top_inner h2{
+.top_inner h2 {
   font-size: 80px;
+  text-shadow: 2px 2px 10px #ff8856, -2px 2px 10px #ff8856,
+    2px -2px 10px #ff8856, -2px -2px 10px #ff8856;
 }
 
-.top_inner p{
+.top_inner p {
   font-size: 20px;
   color: #777;
   position: relative;
   top: -50px;
 }
 
-.seciton{
+.seciton {
   margin: 150px 0;
 }
 
-.news{
+.news {
   display: grid;
   position: relative;
   width: 70%;
@@ -76,40 +93,54 @@ color: #ff8856;
   padding: 50px 0 30px;
 }
 
-.news h3{
+.news h3 {
   text-align: center;
   font-size: 40px;
   color: #ff8856;
   font-weight: bold;
   line-height: 1;
+  text-shadow: 2px 2px 10px #777, -2px 2px 10px #777, 2px -2px 10px #777,
+    -2px -2px 10px #777;
 }
 
-.news h3 small{
+.news h3 small {
   font-size: 20px;
+  text-shadow: none;
 }
 
-.news .news_list{
+.news .news_list {
   margin: 0 50px;
   text-align: left;
   padding: 30px;
 }
 
-.news .news_list li{
+.news .news_list li {
   font-size: 18px;
   line-height: 2;
   color: #333;
 }
 
-.news .more{
-  background: #888;
+.news .more {
+  background: #ff8856;
   text-align: center;
   width: 20%;
   margin: 20px auto;
   border-radius: 5px;
   padding: 10px;
+  box-shadow: 0 5px #4e4c4c;
 }
 
-.news .more a{
+.news .more a:hover {
+  color: #4e4e4e;
+}
+
+.news .more:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.news .more a {
   color: #fff;
   font-weight: bold;
 }
@@ -119,7 +150,7 @@ color: #ff8856;
   position: relative;
 }
 
-.feature_inner{
+.feature_inner {
   width: 50%;
   background-color: #fff;
   border-top: solid 3px #ff8856;
@@ -129,32 +160,35 @@ color: #ff8856;
   margin-top: 25%;
 }
 
-.feature_inner h4{
+.feature_inner h4 {
   font-size: 50px;
   padding: 15% 0 0 15%;
   color: #ff8856;
+  text-shadow: 2px 2px 10px #777, -2px 2px 10px #777, 2px -2px 10px #777,
+    -2px -2px 10px #777;
 }
 
-.feature_inner small{
+.feature_inner small {
   font-size: 20px;
   padding-left: 15%;
   font-weight: bold;
+  text-shadow: none;
 }
 
-.feature_inner p{
+.feature_inner p {
   width: 50%;
   margin: 0 auto;
   line-height: 2.5;
   padding: 10% 0;
 }
 
-.feature_bg{
+.feature_bg {
   background: #ddd;
   height: 570px;
   width: 60%;
 }
 
-.feature_img{
+.feature_img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,32 +197,37 @@ color: #ff8856;
   z-index: 2;
 }
 
-.feature_img img{
+.feature_img img {
   display: block;
   width: 80%;
   margin: auto;
   height: 320px;
 }
 
-.service{
+.service {
   display: inline-block;
   position: relative;
   width: 100%;
 }
 
-.service h3{
+.service h3 {
   text-align: center;
   font-size: 50px;
   color: #ff8856;
   line-height: 1;
+  text-shadow: 2px  2px 10px #777 ,
+               -2px  2px 10px #777 ,
+                2px -2px 10px #777 ,
+               -2px -2px 10px #777;
 }
 
-.service small{
+.service small {
   font-size: 20px;
   color: #555;
+  text-shadow: none;
 }
 
-.service_bg{
+.service_bg {
   background-image: url("../img/service_bg.png");
   background-size: cover;
   height: 900px;
@@ -196,7 +235,7 @@ color: #ff8856;
   text-align: center;
 }
 
-.service_item{
+.service_item {
   width: 25%;
   display: inline-block;
   height: 600px;
@@ -205,35 +244,48 @@ color: #ff8856;
   padding: 50px 30px;
 }
 
-.service_item img{
+.service_item img {
   width: 250px;
   height: 250px;
   margin: 0 auto;
 }
 
-.service_item h4{
+.service_item h4 {
   font-size: 30px;
   padding-top: 20px;
 }
 
-.service_item small{
+.service_item small {
   font-size: 13px;
   color: #ff8856;
   font-weight: bold;
+  text-shadow:none;
 }
 
-.service_item p{
+.service_item p {
   padding: 10px;
   line-height: 2;
 }
 
-.service .btn a{
+.service .btn a {
   background: #ff8856;
   padding: 20px 60px;
   position: relative;
   top: 90px;
   color: #fff;
   font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 0 5px #4e4e4e;
+}
+
+.service .btn :hover {
+  color: #4e4e4e;
+}
+
+.service .btn a:active {
+  box-shadow: none;
+  position: relative;
+  top: 95px;
 }
 
 .recruit {
@@ -253,12 +305,17 @@ color: #ff8856;
 .recruit h3 {
   font-size: 50px;
   color: #ff8856;
+  text-shadow: 2px  2px 10px #777 ,
+               -2px  2px 10px #777 ,
+                2px -2px 10px #777 ,
+               -2px -2px 10px #777;
 }
 
 .recruit h3 small {
   font-size: 20px;
   color: #555;
   font-weight: bold;
+  text-shadow: none;
 }
 
 .recruit h4 {
@@ -280,6 +337,18 @@ color: #ff8856;
   top: 90px;
   color: #fff;
   font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 0 5px #4e4e4e;
+}
+
+.recruit .btn :hover {
+  color: #4e4e4e;
+}
+
+.recruit .btn a:active {
+  box-shadow: none;
+  position: relative;
+  top: 95px;
 }
 
 .recruit img {
@@ -303,12 +372,17 @@ color: #ff8856;
 .contact {
   position: relative;
   width: 100%;
+  background: url(../img/top2.png);
+  background-size: cover;
+  height: 900px;
 }
 
 .contact h3 {
   font-size: 50px;
   color: #ff8856;
   text-align: center;
+  text-shadow: 2px 2px 10px #eee, -2px 2px 10px #eee, 2px -2px 10px #eee,
+    -2px -2px 10px #eee;
 }
 
 .contact h3 small {
@@ -321,6 +395,8 @@ color: #ff8856;
   margin: 0 auto;
   text-align: center;
   padding-top: 80px;
+  text-shadow: 2px 2px 10px #eee, -2px 2px 10px #eee, 2px -2px 10px #eee,
+    -2px -2px 10px #eee;
 }
 
 .contact .btn a {
@@ -330,6 +406,18 @@ color: #ff8856;
   padding: 20px 60px;
   color: #fff;
   font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 0 5px #4e4e4e;
+}
+
+.contact .btn :hover {
+  color: #4e4e4e;
+}
+
+.contact .btn a:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
 }
 
 footer {
@@ -378,6 +466,10 @@ footer {
   top: 0;
 }
 
+.footer_list li:hover {
+  font-size: 20px;
+}
+
 .footer_list ul li {
   width: 200px;
   padding: 20px 0 0 40px;
@@ -385,7 +477,7 @@ footer {
   font-size: 12px;
 }
 
-.copyright{
+.copyright {
   float: right;
   font-size: 5px;
   font-weight: bold;
